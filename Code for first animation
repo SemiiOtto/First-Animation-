@@ -1,0 +1,51 @@
+//created variables go to the top to declare the variable
+let circleX;
+let circleY;
+let rectX;
+let rectY;
+let lineX;
+let lineY;
+
+
+
+
+function setup() {
+  createCanvas(600, 600);
+ //set the values of the variable you declared inside set up function
+  circleX = 100;
+  circleY = 600;
+  rectX = 200
+  rectY = 75
+  lineX = 1
+  lineY = 600
+}
+
+function draw() {
+  background(220,60,255);
+  
+  //Ellipse
+    fill(25,5,255)
+  ellipse(circleX,circleY,120)
+  ellipseMode(CENTER)
+
+  
+  //Square
+  fill(0,)
+  rect(rectX,rectY,33)
+  
+  //Line
+  line(lineX,lineY,lineY,508)
+  
+  
+  //run the variable you to to a command which causes the animation
+  circleX = circleX +.1
+  circleY= circleY-.1
+  rectX = rectX +.1
+  rectY = rectY +.2
+  lineX = lineX + 5
+  lineY = lineY -5
+}
+
+Links
+Fullscreen: https://editor.p5js.org/SemiiOtto/full/aBTIqxBpM
+Editor: https://editor.p5js.org/SemiiOtto/sketches/aBTIqxBpM
